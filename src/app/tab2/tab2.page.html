@@ -1,0 +1,8 @@
+<ion-content>
+  <ion-card class="welcome-card" *ngFor="let dps of dano" routerLink="/details2/{{dps.id}}">
+    <ion-img src={{dps.imagem}}></ion-img>
+   <ion-card-header>
+     <ion-card-title>{{dps.nome}}</ion-card-title>
+     </ion-card-header>
+  </ion-card>
+</ion-content>

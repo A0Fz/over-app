@@ -1,0 +1,29 @@
+<ion-content>
+    <ion-card class="welcome-card">
+        <ion-img [src]="tanque.imagem"></ion-img>
+            <ion-card-header>
+                <ion-card-title>{{tanque.nome}}</ion-card-title><br>
+                <ion-card-subtitle>Nome verdadeiro:{{tanque.nomeverdadeiro}}.</ion-card-subtitle><br>
+                <ion-card-subtitle>Idade:{{tanque.idade}}.</ion-card-subtitle><br>
+                <ion-card-subtitle>Ocupação:{{tanque.ocupacao}}.</ion-card-subtitle><br>
+                <ion-card-subtitle>Base de operações:{{tanque.baseoperacoes}}.</ion-card-subtitle><br>
+                <ion-card-subtitle>Afiliação:{{tanque.afiliacao}}.</ion-card-subtitle><br>
+                <ion-card-subtitle>Dificuldade de jogabilidade:{{tanque.dificuldade}}</ion-card-subtitle>
+            </ion-card-header>
+    </ion-card>
+    <ion-card>
+            <ion-card-header>
+                <ion-card-title>História</ion-card-title>
+                <p>{{tanque.historia}}</p>
+            </ion-card-header>
+    </ion-card>
+    <ion-card>
+        <ion-card-header>
+                <ion-card-title>Habilidade</ion-card-title>
+                <video controls="controls" preload="metadata" webkit-playsinline="webkit-playsinline">
+                        <source src="{{tanque.habilidade}}" />
+                </video>
+        </ion-card-header>
+    </ion-card>
+</ion-content>
+  

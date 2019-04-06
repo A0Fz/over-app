@@ -1,0 +1,8 @@
+<ion-content>
+  <ion-card class="welcome-card" *ngFor="let heal of suporte" routerLink="/details3/{{heal.id}}">
+    <ion-img src={{heal.imagem}}></ion-img>
+   <ion-card-header>
+     <ion-card-title>{{heal.nome}}</ion-card-title>
+     </ion-card-header>
+ </ion-card>
+</ion-content>

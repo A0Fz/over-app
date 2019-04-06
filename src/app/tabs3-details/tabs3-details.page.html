@@ -1,0 +1,29 @@
+<ion-content>
+        <ion-card class="welcome-card">
+            <ion-img [src]="suporte.imagem"></ion-img>
+                <ion-card-header>
+                    <ion-card-title>{{suporte.nome}}</ion-card-title><br>
+                    <ion-card-subtitle>Nome verdadeiro:{{suporte.nomeverdadeiro}}.</ion-card-subtitle><br>
+                    <ion-card-subtitle>Idade:{{suporte.idade}}.</ion-card-subtitle><br>
+                    <ion-card-subtitle>Ocupação:{{suporte.ocupacao}}.</ion-card-subtitle><br>
+                    <ion-card-subtitle>Base de operações:{{suporte.baseoperacoes}}.</ion-card-subtitle><br>
+                    <ion-card-subtitle>Afiliação:{{suporte.afiliacao}}.</ion-card-subtitle><br>
+                    <ion-card-subtitle>Dificuldade de jogabilidade:{{suporte.dificuldade}}</ion-card-subtitle>
+                </ion-card-header>
+        </ion-card>
+        <ion-card>
+                <ion-card-header>
+                    <ion-card-title>História</ion-card-title>
+                    <p>{{suporte.historia}}</p>
+                </ion-card-header>
+        </ion-card>
+        <ion-card>
+            <ion-card-header>
+                    <ion-card-title>Habilidade</ion-card-title>
+                    <video controls="controls" autoplay="autoplay" preload="metadata" webkit-playsinline="webkit-playsinline">
+                        <source src="{{suporte.habilidade}}" />
+                    </video>
+            </ion-card-header>
+        </ion-card>
+    </ion-content>
+      
